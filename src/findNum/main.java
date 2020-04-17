@@ -66,8 +66,8 @@ public class main {
 
 		ArrayList<Integer> oList = new ArrayList<Integer>();
 		
-		//for(int i1=1; i1 <= 45; i1++){
-		int i1 = 2;
+		for(int i1=4; i1 <= 45; i1++){
+		//int i1 = 3;
 			for(int i2= i1 + 1; i2 <= 45; i2++){
 				System.out.println("F : " + i1 + " Step 2 : " + i2 + " / 45 ");
 				for(int i3= i2 + 1; i3 <= 45; i3++){
@@ -108,7 +108,7 @@ public class main {
 					}
 				}
 			}
-		//}
+		}
 		
 	}
 	
