@@ -52,6 +52,7 @@ public class LtCase {
 		strInsert.append(", NUMVALUE_4     ");
 		strInsert.append(", NUMVALUE_5     ");
 		strInsert.append(", NUMVALUE_6     ");
+		strInsert.append(", IN_SQL     ");
 		strInsert.append(") VALUES (     ");
 		strInsert.append("'" + this._Num.get_StaticValue().toString() + "'     ");
 		strInsert.append(", '" + this._Num.get_MinNumber().toString() + "'     ");
@@ -61,6 +62,9 @@ public class LtCase {
 			strInsert.append(", '" + this._NumList.get(i) + "'     ");
 		}		
 		
+		String strInq = strInsert.toString() + ", '');";
+		strInq = strInq.replace("'", "''");		
+		strInsert.append(", '" + strInq + "'     ");
 		strInsert.append(");     ");
 		
 		strResult = strInsert.toString();
